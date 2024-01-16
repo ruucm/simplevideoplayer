@@ -94,10 +94,10 @@ function CustomVideoControls(props) {
       e.preventDefault();
       if (e.keyCode === FORWARD_KEY) {
         // move forward by 0.5 seconds
-        video.currentTime = Math.min(video.duration, video.currentTime + 0.5);
+        video.currentTime = Math.min(video.duration, video.currentTime + 5);
       } else if (e.keyCode === BACKWARD_KEY) {
         // move backward by 0.5 seconds
-        video.currentTime = Math.max(0, video.currentTime - 0.5);
+        video.currentTime = Math.max(0, video.currentTime - 5);
       }
 
       displayVideoTime();
